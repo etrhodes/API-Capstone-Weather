@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+}
+
+ #forecast-results {
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+  #current-results {
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+#welcome {
+    text-align: center;
+}
