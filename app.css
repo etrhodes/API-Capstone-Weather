@@ -24,3 +24,7 @@ body {
     background-image: url(/images/clouds.jpeg);
     background-size: cover;
 }
+
+h1, h2, h3 {
+    color: white;
+}
