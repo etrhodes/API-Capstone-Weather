@@ -88,14 +88,14 @@ function displayForecast(responseJson) {
     $('#target').append(`
         <div id="forecast-results">
             <p><h3>Day ${day}: </h3></p>
-            <p>Daytime temp: ${responseJson.list[i].temp.day}</p>
-            <p>Low temp: ${responseJson.list[i].temp.min}</p>
-            <p>High temp: ${responseJson.list[i].temp.max}</p>
+            <p>Daytime temp: ${responseJson.list[i].temp.day} degrees</p>
+            <p>Low temp: ${responseJson.list[i].temp.min} degrees</p>
+            <p>High temp: ${responseJson.list[i].temp.max} degrees</p>
             <p><h3>Feels like: </h3></p>
-            <p>Day: ${responseJson.list[i].feels_like.day}</p>
-            <p>Night: ${responseJson.list[i].feels_like.night}</p>
-            <p>Evening: ${responseJson.list[i].feels_like.eve}</p>
-            <p>Morning: ${responseJson.list[i].feels_like.morn}</p>
+            <p>Day: ${responseJson.list[i].feels_like.day} degrees</p>
+            <p>Night: ${responseJson.list[i].feels_like.night} degrees</p>
+            <p>Evening: ${responseJson.list[i].feels_like.eve} degrees</p>
+            <p>Morning: ${responseJson.list[i].feels_like.morn} degrees</p>
         </div>
     `);
     day ++;
