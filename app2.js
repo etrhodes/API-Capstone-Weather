@@ -36,7 +36,7 @@ function displayCurrent(responseJson) {
     $('#target').empty();
     $('#target').append(`
     <div id="current-results">
-        <p><h2>${responseJson.name}</h2></p>
+        <p><h2 class="black">${responseJson.name}</h2></p>
         <p>The main temperature today is ${responseJson.main.temp}°.</p>
         <p>Feels like ${responseJson.main.feels_like}°.</p>
         <p>The low temp today is ${responseJson.main.temp_min}°.</p>
@@ -87,11 +87,11 @@ function displayForecast(responseJson) {
     for (let i = 0; i < responseJson.list.length; i++) {
     $('#target').append(`
         <div id="forecast-results">
-            <p><h3>Day ${day}: </h3></p>
+            <p><h3 class="black">Day ${day}: </h3></p>
             <p>Daytime temp: ${responseJson.list[i].temp.day}°</p>
             <p>Low temp: ${responseJson.list[i].temp.min}°</p>
             <p>High temp: ${responseJson.list[i].temp.max}°</p>
-            <p><h3>Feels like: </h3></p>
+            <p><h3 class="black">Feels like: </h3></p>
             <p>Day: ${responseJson.list[i].feels_like.day}°</p>
             <p>Night: ${responseJson.list[i].feels_like.night}°</p>
             <p>Evening: ${responseJson.list[i].feels_like.eve}°</p>

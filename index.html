@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Parks Search</title>
+    <title>API Weather App</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -15,15 +15,19 @@
             <h3>Look up the current and 7 day forecasts for your favorite city.</h3>
         </div>    
         <div id="current-weather-div">
-            <h3>Search the current weather</h3>
-            <input id="current-weather" type="text" name="current-weather" placeholder="City Name">
-            <button id="current-weather-search">Search City</button>
+            <form>
+                <h3>Search the current weather</h3>
+                <input id="current-weather" type="text" name="current-weather" placeholder="City Name">
+                <button type="submit" id="current-weather-search">Search City</button>
+            </form>
         </div>
         <h2>OR</h2>
         <div id="forecast-div">
-            <h3>Get a 7 day forecast for your city.</h3>
-            <input id="forecast" type="text" name="forecast" placeholder="City Name">
-            <button id="forecast-button">Get Forecast</button>
+            <form>
+                <h3>Get a 7 day forecast for your city.</h3>
+                <input id="forecast" type="text" name="forecast" placeholder="City Name">
+                <button id="forecast-button">Get Forecast</button>
+            </form>
         </div>
     </section>
     <section id="results" class="hidden">
