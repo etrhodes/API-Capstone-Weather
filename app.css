@@ -19,3 +19,8 @@
 #welcome {
     text-align: center;
 }
+
+body {
+    background-image: url(/images/clouds.jpeg);
+    background-size: cover;
+}
