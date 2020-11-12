@@ -12,10 +12,10 @@
         <div id="welcome">
             <h1>Weather App</h1>
             <h2>Welcome to the weather search app.</h2>
-            <h3>Look up the current and 7 day forecasts for your favorite city.</h3>
+            <h3>Look up the current weather and 7 or 30 day forecasts for your favorite city.</h3>
         </div>    
         <div id="current-weather-div">
-            <form>
+            <form id="current-form">
                 <h3>Search the current weather</h3>
                 <input id="current-weather" type="text" name="current-weather" placeholder="City Name">
                 <button type="submit" id="current-weather-search">Search City</button>
@@ -23,10 +23,10 @@
         </div>
         <h2>OR</h2>
         <div id="forecast-div">
-            <form>
+            <form id="forecast-form">
                 <h3>Get a 7 day forecast for your city.</h3>
                 <input id="forecast" type="text" name="forecast" placeholder="City Name">
-                <button id="forecast-button">Get Forecast</button>
+                <button type="submit" id="forecast-button">Get Forecast</button>
             </form>
         </div>
     </section>

@@ -2,9 +2,15 @@
     display: none;
 }
 
+@media (min-width: 480px) {
+    #forecast-results {
+        display: inline-block;
+    }
+
+}
+
  #forecast-results {
     vertical-align: middle;
-    display: inline-block;
     border: 3px solid black;
     padding: 10px;
     background-color: white;
@@ -25,6 +31,7 @@
 body {
     background-image: url(images/clouds.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3 {

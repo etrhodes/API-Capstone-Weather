@@ -1,7 +1,7 @@
 "use strict";
 
 function searchCurrent() {
-    $('#current-weather-search').on('click', event => {
+    $('form#current-form').on('submit', event => {
         event.preventDefault();
         let city = $('#current-weather').val();
         console.log(city);
@@ -47,7 +47,7 @@ function displayCurrent(responseJson) {
 }
 
 function forecast() {
-    $('#forecast-button').on('click', event => {
+    $('form#forecast-form').on('submit', event => {
         event.preventDefault();
         let forecastCity = $('#forecast').val();
         console.log(forecastCity);
@@ -102,8 +102,6 @@ function displayForecast(responseJson) {
 };
     $('#results').removeClass('hidden')
 }
-
-
 
 function handleApp() {
     searchCurrent();
