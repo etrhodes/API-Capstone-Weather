@@ -51,6 +51,6 @@ h1, h2, h3 {
 @media (max-width: 480px) {
     body {
         background-image: none;
-        background-color: rgb(20, 20, 116)
+        background-color: rgb(16, 57, 102)
     }
 }
