@@ -1,1 +1,7 @@
-# API-Capstone-Weather
+Weather Search App
+
+https://etrhodes.github.io/API-Capstone-Weather/
+
+
+
+
