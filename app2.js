@@ -28,11 +28,15 @@ function currentWeather(city) {
     displayCurrent(responseJson);
 })
 .catch(err => {
-	console.error(err);
+	alert('City not found. Please try again.');
 });
 }
 
 function displayCurrent(responseJson) {
+    if (Object.keys(responseJson).length === 0) {
+        alert('No results found.');
+        return;
+    }
     $('#target').empty();
     $('#target').append(`
     <div id="current-results">
@@ -76,11 +80,15 @@ fetch(forecastURL, {
 
 })
 .catch(err => {
-	console.error(err);
+	alert('City not found. Please try again.');
 });
 }
 
 function displayForecast(responseJson) {
+    if (Object.keys(responseJson).length === 0) {
+        alert('No results found.');
+        return;
+    }
     $('#target').empty();
     let day = 1;
     let i = 0;

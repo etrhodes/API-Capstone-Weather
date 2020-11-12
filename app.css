@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
+
+
 .hidden {
     display: none;
 }
@@ -32,12 +35,22 @@ body {
     background-image: url(images/clouds.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgb(20, 20, 116);
+
 }
 
 h1, h2, h3 {
     color: white;
+    font-family: "Alegreya";
 }
 
 .black {
     color: black;
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+        background-color: rgb(20, 20, 116)
+    }
 }
