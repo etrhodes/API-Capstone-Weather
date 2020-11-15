@@ -1,6 +1,6 @@
-Weather Search App
+Weather Capstone API
 
-https://etrhodes.github.io/API-Capstone-Weather/
+https://etrhodes.github.io/Weather-Search-App/
 
 <img src="https://github.com/etrhodes/API-Capstone-Weather/blob/main/images/APIscreenshotImage1.png">
 
