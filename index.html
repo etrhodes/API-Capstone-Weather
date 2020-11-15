@@ -7,35 +7,44 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    
-    <section>
-        <div id="welcome">
-            <h1>Weather App</h1>
-            <h2>Welcome to the weather search app.</h2>
-            <h3>Look up the current weather and 7 day forecasts for your favorite city.</h3>
-            <h3>(Input city name ONLY, with no state or country.)</h3>
-        </div>    
-        <div id="current-weather-div">
-            <form id="current-form">
-                <h3>Search the current weather</h3>
-                <input id="current-weather" type="text" name="current-weather" placeholder="City Name">
-                <button type="submit" id="current-weather-search">Search City</button>
-            </form>
-        </div>
-        <h2>OR</h2>
-        <div id="forecast-div">
-            <form id="forecast-form">
-                <h3>Get a 7 day forecast for your city.</h3>
-                <input id="forecast" type="text" name="forecast" placeholder="City Name">
-                <button type="submit" id="forecast-button">Get Forecast</button>
-            </form>
-        </div>
-    </section>
-    <section id="results" class="hidden">
-        <h2>Search Results</h2>
-        <div id="target">
-        </div>
-    </section>
+    <main>
+        <article>
+            <section>
+            <div id="welcome">
+                <h1>City Search App</h1>
+                <h2>Welcome to the city search app</h2>
+                <h3>Find information on your favorite cities.</h3>
+            </div>   
+            <div>
+                <form id="city-search">
+                    <h2>Please enter a city</h2>
+                    <input id="news-search" type="text" label="city" name="city" placeholder="e.g. Atlanta">
+                    <button id="search" type="submit">Search Now</button>
+                </form>
+            </div> 
+            <div id="current-weather-div">
+                <form id="current-form">
+                    <h3>Search the current weather</h3>
+                    <input id="current-weather" type="text" name="current-weather" placeholder="City Name">
+                    <button type="submit" id="current-weather-search">Search City</button>
+                </form>
+            </div>
+            <h2>OR</h2>
+            <div id="forecast-div">
+                <form id="forecast-form">
+                    <h3>Get a 7 day forecast for your city.</h3>
+                    <input id="forecast" type="text" name="forecast" placeholder="City Name">
+                    <button type="submit" id="forecast-button">Get Forecast</button>
+                </form>
+            </div>
+        </section>
+        <section id="results" class="hidden">
+            <h2>Search Results</h2>
+            <div id="target">
+            </div>
+            </section>
+        </article>
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="app2.js"></script>
 </body>

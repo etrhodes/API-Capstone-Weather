@@ -1,5 +1,18 @@
 "use strict";
 
+const searchURL = 'https://community-open-weather-map.p.rapidapi.com/';
+const googleURL = 'https://google-news.p.rapidapi.com/v1/search?q=E';
+
+function newsSearch() {
+    $('#search').on('submit', event => {
+        event.preventDefault();
+        let googleQuery = $('#news-search').val();
+        displayNews(googleQuery);
+    })
+}
+
+
+
 function searchCurrent() {
     $('form#current-form').on('submit', event => {
         event.preventDefault();
@@ -10,9 +23,10 @@ function searchCurrent() {
 }
 
 function currentWeather(city) {
-    let currentURL = `https://community-open-weather-map.p.rapidapi.com/weather?q=${city}&units=imperial`;
-    console.log(currentURL);
-    fetch(currentURL, {
+    let currentParams = `weather?q=${city}&units=imperial`;
+    let currentSearchURL = searchURL + currentParams;
+    console.log(currentSearchURL);
+    fetch(currentSearchURL, {
 	"headers": {
 		"x-rapidapi-key": "2b8b09ddeamsh68aaebeff7640a2p14dbc8jsna48b4df442b7",
 		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
@@ -60,7 +74,8 @@ function forecast() {
 }
 
 function getForecast(forecastCity) {
-let forecastURL = `https://community-open-weather-map.p.rapidapi.com/forecast/daily?q=${forecastCity}&units=imperial`;
+let forecastParams = `forecast/daily?q=${forecastCity}&units=imperial`;
+let forecastURL = searchURL + forecastParams;
 console.log(forecastURL);
 fetch(forecastURL, {
 	"method": "GET",
@@ -92,6 +107,10 @@ function displayForecast(responseJson) {
     $('#target').empty();
     let day = 1;
     let i = 0;
+    $('#target').append(`
+        <h3>Your 7 day forcast for ${responseJson.name}</h3>
+    `
+    )
     for (let i = 0; i < responseJson.list.length; i++) {
     $('#target').append(`
         <div id="forecast-results">
@@ -117,3 +136,8 @@ function handleApp() {
 }
 
 handleApp();
+
+
+/*
+APIs Used: https://rapidapi.com/newscatcher-api-newscatcher-api-default/api/google-news?endpoint=apiendpoint_5e0fa919-2494-4b20-a212-d186b7e8c3d8
+*/
